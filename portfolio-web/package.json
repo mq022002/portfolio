@@ -9,7 +9,9 @@
     "lint": "prettier --write . && next lint",
     "lint:ci": "prettier --check . && next lint",
     "test": "jest --coverage --watch",
-    "ci:test": "jest --ci --coverage --silent"
+    "ci:test": "jest --ci --coverage --silent",
+    "cypress": "cypress open",
+    "ci:cypress": "cypress run"
   },
   "dependencies": {
     "firebase": "^11.5.0",
@@ -24,6 +26,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cypress": "^14.2.0",
     "eslint": "^9",
     "eslint-config-next": "15.2.3",
     "eslint-config-prettier": "^10.1.1",
