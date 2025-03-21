@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "prettier --write . && next lint",
-    "lint:ci": "prettier --check . && next lint",
+    "ci:lint": "prettier --check . && next lint",
     "test": "jest --coverage --watch",
     "ci:test": "jest --ci --coverage --silent",
     "cypress": "cypress open",
