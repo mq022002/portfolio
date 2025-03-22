@@ -1,10 +1,6 @@
-interface MQLogoProps {
-  fill?: string;
-  width: number;
-  height: number;
-}
+import { IconProps, defaultFill } from "./index";
 
-const MQLogo = ({ fill, width, height }: MQLogoProps) => {
+const MQLogo = ({ fill, width, height }: IconProps) => {
   return (
     <svg
       version="1.0"
@@ -17,7 +13,7 @@ const MQLogo = ({ fill, width, height }: MQLogoProps) => {
       <metadata>Created by Matthew Quijano</metadata>
       <g
         transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
-        fill={fill}
+        fill={fill || defaultFill}
         stroke="none"
       >
         <path
